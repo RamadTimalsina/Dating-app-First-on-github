@@ -128,8 +128,7 @@
 
 // export default PhotoScreen;
 
-
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   StyleSheet,
   Text,
@@ -141,7 +140,7 @@ import {
 import ImageCropPicker from 'react-native-image-crop-picker';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import {
   getRegistrationProgress,
   saveRegistrationProgress,
@@ -160,7 +159,7 @@ const PhotoScreen = () => {
     });
   }, []);
 
-  const handleChooseImage = async (index) => {
+  const handleChooseImage = async index => {
     try {
       const image = await ImageCropPicker.openPicker({
         multiple: false,
@@ -177,7 +176,7 @@ const PhotoScreen = () => {
 
   const handleNext = () => {
     // Save the current progress data including the image URLs
-    saveRegistrationProgress('Photos', { imageUrls });
+    saveRegistrationProgress('Photos', {imageUrls});
 
     // Navigate to the next screen
     navigation.navigate('Prompts'); // Navigate to the appropriate screen
@@ -193,7 +192,7 @@ const PhotoScreen = () => {
             onPress={() => handleChooseImage(index)}>
             {url ? (
               <Image
-                source={{ uri: url }}
+                source={{uri: url}}
                 style={styles.image}
                 resizeMode="contain"
               />
