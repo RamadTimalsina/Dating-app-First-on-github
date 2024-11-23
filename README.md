@@ -1,4 +1,4 @@
-song images OF the project if you need all please do contact me 
+Some images Of the project.. if you need all please do contact me 
 
 ![image alt](https://github.com/RamadTimalsina/Dating-app-First-on-github/blob/main/Screenshot%202024-06-22%20170350.png)
 ![image alt](https://github.com/RamadTimalsina/Dating-app-First-on-github/blob/main/Screenshot%202024-06-22%20170418.png)
